@@ -6,17 +6,26 @@ import { CustomButton } from ".";
 import { useRouter } from "next/navigation";
 import { updateSearchParams } from "@/utils";
 
-const ShowMore = ({ isNext, pageNumber }: ShowMoreProps) => {
-  const router = useRouter();
+// const ShowMore = ({ isNext, pageNumber }: ShowMoreProps) => {
+  // const router = useRouter();
+  
+  // const handleNavigation = () => {
+    //   const newLimit = (pageNumber + 1) * 12;
+    
+    //   const newPathName = updateSearchParams("limit", `${newLimit}`);
+    
+    //   router.push(newPathName);
+    // };
+    
+    // CLIENT VERSION
+    
+const ShowMore = ({ isNext, pageNumber, setLimit }: ShowMoreProps) => {
 
   const handleNavigation = () => {
     const newLimit = (pageNumber + 1) * 12;
-
-    const newPathName = updateSearchParams("limit", `${newLimit}`);
-
-    router.push(newPathName);
-  };
-
+    setLimit(newLimit)
+  }
+  
   return (
     <div className="flex-center w-full mt-10 gap-5">
       {!isNext && (

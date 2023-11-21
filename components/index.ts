@@ -15,5 +15,5 @@ export {
   Footer,
   NavBar,
   ShowMore,
-  SearchBar,
+  SearchBar
 };

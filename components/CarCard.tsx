@@ -1,10 +1,10 @@
 "use client";
 
+import Image from "next/image";
+import CarDetails from "./CarDetails";
 import { CarProps } from "@/types";
 import { calculateCarRent, generateCarImageUrl } from "@/utils";
-import Image from "next/image";
 import { CustomButton } from ".";
-import CarDetails from "./CarDetails";
 import { useState } from "react";
 
 interface CarCardProps {

@@ -1,8 +1,8 @@
 "use client";
 
 // import { SearchManuFacturerProps } from "@/types";
-import { Combobox, Transition } from "@headlessui/react";
 import Image from "next/image";
+import { Combobox, Transition } from "@headlessui/react";
 import { useState, Fragment } from "react";
 import { manufacturers } from "@/constants";
 

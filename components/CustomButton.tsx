@@ -1,7 +1,7 @@
 "use client";
 
-import { CustomButtonProps } from "@/types";
 import Image from "next/image";
+import { CustomButtonProps } from "@/types";
 import { GoPerson } from "react-icons/go";
 
 const Button = ({ isShow, isDisabled, title, btnType, containerStyles, textStyles, rightIcon, leftIcon, handleClick}: CustomButtonProps) => {

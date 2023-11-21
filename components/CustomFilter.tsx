@@ -1,10 +1,11 @@
 "use client";
 
-import { CustomFilterProps } from "@/types";
-import React, { Fragment, useState } from "react";
-import { Listbox, Transition } from "@headlessui/react";
-import { useRouter } from "next/navigation";
 import Image from "next/image";
+import React, { Fragment, useState } from "react";
+import { CustomFilterProps } from "@/types";
+import { Listbox, Transition } from "@headlessui/react";
+
+import { useRouter } from "next/navigation";
 import { updateSearchParams } from "@/utils";
 
 // const CustomFilter = ({ title, options, setFilter }: CustomFilterProps) => {

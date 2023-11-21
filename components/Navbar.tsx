@@ -21,7 +21,7 @@ const Navbar = () => {
           title="Sign in"
           btnType="button"
           isShow
-          containerStyles="text-primary-blue max-xl:text-white/90 rounded-full bg-white max-xl:bg-primary-blue min-w-[130px]  max-xl:hover:text-white hover:text-blue-700"
+          containerStyles="text-primary-blue max-xl:text-white/90 rounded-full bg-white max-xl:bg-primary-blue min-w-[130px]  max-xl:hover:text-white hover:text-primary-blue/80"
         />       
       </nav>
     </header>

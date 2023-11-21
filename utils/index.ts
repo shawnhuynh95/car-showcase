@@ -2,7 +2,7 @@ import { CarProps, FilterProps } from "@/types";
 
 export default async function fetchCars( filter: FilterProps) {
   const headers = {
-    "X-RapidAPI-Key": "f13b090816mshd6ea75c07517daep1beff2jsnb9cc15f94847",
+    "X-RapidAPI-Key": process.env.NEXT_PUBLIC_RAPID_API_KEY || "",
     "X-RapidAPI-Host": "cars-by-api-ninjas.p.rapidapi.com",
   };
   // Set the required headers for the API request
@@ -18,7 +18,7 @@ export default async function fetchCars( filter: FilterProps) {
 
   // Parse the response as JSON
   const result = await response.json();
-
+  
   return result;
 }
 
